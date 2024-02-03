@@ -1,7 +1,8 @@
-import React from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import iconExpandMenu from "../../../../public/expand_more.svg";
+import { useMenuStore } from "@/store/store";
 
 interface MenuItemProps {
   title: string;
@@ -23,26 +24,44 @@ const NavItem = ({
   title,
   subMenuItems,
 }: MenuItemProps): React.ReactElement => {
+  const [isOpen, setIsOpen] = useState(false);
+  const { hideMenu } = useMenuStore();
+
   return (
     <li className="relative group">
       <a
-        className={`flex items-center cursor-pointer   transition duration-300 ease-linear hover:text-primary  `}
+        onClick={() => setIsOpen(!isOpen)}
+        className={`flex items-center cursor-pointer transition duration-300 ease-linear hover:text-primary`}
       >
         <span>{title}</span>
         <span
-          className={` transition-transform duration-300 ease-linear group-hover:rotate-90`}
+          className={`transition-transform duration-300 ease-linear ${
+            isOpen ? "rotate-90" : ""
+          }`}
         >
           <Image src={iconExpandMenu} alt="icono de expander el menu" />
         </span>
       </a>
       <ul
-        className={`absolute m-0 list-none p-0 transition-all duration-300 ease-linear group-hover:block hidden bg-white pt-4`}
+        className={`absolute m-0 list-none p-0 transition-all duration-300 ease-linear ${
+          isOpen ? "block" : "hidden"
+        } bg-white pt-4`}
       >
-        {subMenuItems.map((item) => (
+        {subMenuItems.map((item, index) => (
           <li key={item.title}>
-            <Link href={item.link} className={` ${tailwindClassNames.link}`}>
+            {index === 0 && <hr key={index} className="border-primary" />}
+            <Link
+              href={item.link}
+              className={`${tailwindClassNames.link}`}
+              onClick={() => {
+                setIsOpen(false);
+                hideMenu();
+              }}
+            >
               {item.title}
             </Link>
+
+            <hr className="border-primary" />
           </li>
         ))}
       </ul>

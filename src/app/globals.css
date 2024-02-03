@@ -42,16 +42,13 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: "var(--heading-color)";
 }
 
 h2 {
   font-size: 30px;
-  color: "var(--heading-color)";
 }
 h3 {
   font-size: 24px;
-  color: "var(--heading-color)";
 }
 
 .small-text {
