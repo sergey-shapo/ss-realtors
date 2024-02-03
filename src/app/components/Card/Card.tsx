@@ -1,5 +1,5 @@
 import priceFormatter from "@/app/utils/priceFormatter";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export interface CardProps {
   title: string;
@@ -22,14 +22,17 @@ const Card = ({
       className=" flex flex-col w-full 
      md:w-[330px]  shadow-100 shadow-xl rounded-b-md  "
     >
-      <Image
-        alt={title}
-        src={image}
-        width={300}
-        height={400}
-        layout="responsive"
-        className="object-cover w-full h-full"
-      />
+      <div className="w-full h-full">
+        <Image
+          alt={title}
+          src={image}
+          width={300}
+          height={280}
+          priority={true}
+          layout="responsive"
+          className="object-cover"
+        />
+      </div>
       <div className="p-5 flex flex-col gap-6">
         <span className="text-cardHeading font-medium">{typeProperty}</span>
         <span className="text-cardHeading font-medium">{title}</span>

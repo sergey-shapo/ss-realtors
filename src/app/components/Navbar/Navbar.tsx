@@ -9,7 +9,7 @@ const Navbar = (): React.ReactElement => {
     <nav
       className={`${
         isMenuOpen
-          ? "fixed inset-0 flex flex-col items-center justify-center space-y-4 bg-white"
+          ? "fixed inset-0 flex flex-col items-center justify-center space-y-4 bg-white h-screen w-screen z-10 overflow-hidden"
           : "hidden"
       } md:flex `}
     >

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import logo from "../../../../public/logo.webp";
 import MenuOpenSvg from "../../../../public/menu.svg";
 import MenuCloseSvg from "../../../../public/menu_open.svg";
@@ -17,15 +17,17 @@ const Header = (): React.ReactElement => {
         className="cursor-pointer sm:self-center z-20"
         priority={true}
       />
-      <Image
-        src={isMenuOpen ? MenuCloseSvg : MenuOpenSvg}
-        alt="Menu Open Icon"
-        className="cursor-pointer  md:hidden z-10"
-        onClick={toggleMenu}
-        width={30}
-        height={30}
-        priority={true}
-      />
+      <div className=" md:hidden z-20">
+        <Image
+          src={isMenuOpen ? MenuCloseSvg : MenuOpenSvg}
+          alt="Menu Open Icon"
+          className="cursor-pointer "
+          onClick={toggleMenu}
+          width={30}
+          height={30}
+          priority={true}
+        />
+      </div>
 
       <Navbar />
     </header>
