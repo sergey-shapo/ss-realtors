@@ -19,8 +19,8 @@ const Card = ({
 }: CardProps): React.ReactElement => {
   return (
     <li
-      className=" flex flex-col w-full
-     md:w-[330px]  shadow-100 shadow-xl rounded-b-md "
+      className=" flex flex-col w-full 
+     md:w-[330px]  shadow-100 shadow-xl rounded-b-md  "
     >
       <Image
         alt={title}

@@ -4,7 +4,7 @@ import NavItem from "../NavItem/NavItem";
 import { useMenuStore } from "@/store/store";
 
 const Navbar = (): React.ReactElement => {
-  const { isMenuOpen } = useMenuStore();
+  const { isMenuOpen, hideMenu } = useMenuStore();
   return (
     <nav
       className={`${
@@ -15,7 +15,7 @@ const Navbar = (): React.ReactElement => {
     >
       <ul className="flex flex-col gap-10 items-center md:flex-row md:items-center">
         <li>
-          <Link href="/" className="py-4 hover:text-primary">
+          <Link href="/" className="py-4 hover:text-primary" onClick={hideMenu}>
             Главная
           </Link>
         </li>
@@ -29,12 +29,12 @@ const Navbar = (): React.ReactElement => {
         />
 
         <li>
-          <Link href="/" className="py-4 hover:text-primary">
+          <Link href="/" className="py-4 hover:text-primary" onClick={hideMenu}>
             О нас
           </Link>
         </li>
         <li>
-          <Link href="/" className="py-4 hover:text-primary">
+          <Link href="/" className="py-4 hover:text-primary" onClick={hideMenu}>
             Контакты
           </Link>
         </li>
