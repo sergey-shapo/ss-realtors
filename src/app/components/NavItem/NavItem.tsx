@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import iconExpandMenu from "../../../../public/expand_more.svg";
 import { useMenuStore } from "@/store/store";
@@ -31,7 +31,7 @@ const NavItem = ({
     <li className="relative group">
       <a
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center cursor-pointer transition duration-300 ease-linear hover:text-primary`}
+        className={`flex items-center gap-1 cursor-pointer transition duration-300 ease-linear hover:text-primary`}
       >
         <span>{title}</span>
         <span
