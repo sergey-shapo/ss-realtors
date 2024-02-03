@@ -1,0 +1,62 @@
+[
+  {
+    "typeProperty": "Апартаменты",
+    "title": "Новый стильный апартамент в центре города",
+    "price": 325000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Апартаменты",
+    "title": "Просторная квартира с видом на реку",
+    "price": 280000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Вилла",
+    "title": "Лучшая инвестиция: элегантные апартаменты в историческом квартале",
+    "price": 410000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Апартаменты",
+    "title": "Уютные студии с современным дизайном",
+    "price": 200000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Апартаменты",
+    "title": "Эксклюзивный пентхаус с террасой на крыше",
+    "price": 750000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Апартаменты",
+    "title": "Фешенебельные апартаменты в историческом здании",
+    "price": 580000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Квартира",
+    "title": "Современные апартаменты в тихом районе",
+    "price": 320000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Апартаменты",
+    "title": "Лучшие виды: апартаменты на вершине небоскреба",
+    "price": 900000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Дом",
+    "title": "Экологически чистые апартаменты с садом",
+    "price": 360000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  },
+  {
+    "typeProperty": "Апартаменты",
+    "title": "Дизайнерские апартаменты в современном жилом комплексе",
+    "price": 430000,
+    "image": "https://corp-promotores.es/media/promotions/203/featured-porta-barcelona-pisos-obra-nueva-PISCINA.jpg"
+  }
+]

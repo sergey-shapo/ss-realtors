@@ -26,7 +26,7 @@ const NavItem = ({
   return (
     <li className="relative group">
       <a
-        className={`flex items-center cursor-pointer py-4  transition duration-300 ease-linear hover:text-primary  `}
+        className={`flex items-center cursor-pointer   transition duration-300 ease-linear hover:text-primary  `}
       >
         <span>{title}</span>
         <span
@@ -36,7 +36,7 @@ const NavItem = ({
         </span>
       </a>
       <ul
-        className={`absolute m-0 list-none p-0 transition-all duration-300 ease-linear group-hover:block hidden bg-white px-5 border border-primary`}
+        className={`absolute m-0 list-none p-0 transition-all duration-300 ease-linear group-hover:block hidden bg-white pt-4`}
       >
         {subMenuItems.map((item) => (
           <li key={item.title}>

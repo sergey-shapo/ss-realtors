@@ -9,7 +9,7 @@ const Header = (): React.ReactElement => {
   const { isMenuOpen, toggleMenu } = useMenuStore();
   console.log(isMenuOpen);
   return (
-    <header className="w-full flex items-center justify-between px-5 py-3  h-20">
+    <header className="w-full flex items-center justify-between py-3  h-20 ">
       <Image
         src={MenuOpenSvg}
         alt="Menu Open Icon"

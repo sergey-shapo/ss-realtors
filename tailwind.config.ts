@@ -16,6 +16,7 @@ const tailwindConfig: TailwindConfig = {
       colors: {
         headingColor: "#0f1c38",
         primary: "#4fb7c2",
+        cardHeading: "#222222",
         secondary: "#F35584",
         ternary: "#6b758e",
         fourth: "#c0c4cc",

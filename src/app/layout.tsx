@@ -17,11 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={font.className}>
+      <body
+        className={`${font.className} w-full max-w-[1440px] px-2 m-auto md:px-4 lg:px-6`}
+      >
         <Header />
-        <main className="sm:px-5 md:px-10 lg:px-10 max-w-screen-xl mx-auto px-10 w-full ">
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );
